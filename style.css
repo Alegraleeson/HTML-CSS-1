@@ -1,0 +1,70 @@
+* {
+    /* since browsers defaults may vary, we're clearing everything here so they all start at same place */
+    margin: 0;
+    padding: 0;
+}
+
+.header{
+    background-image: url("C:\Users\wingm\Devmountain\3week\1day\sample\images\background-6996525.jpg");
+    background-color: pink;
+    height: 100px;
+    width: 100%;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
+.footer{
+    height: 50px;
+    width: 100%;
+    background-color: pink;
+    display: inline-block;
+    vertical-align: bottom;
+
+}
+
+.wrapper{
+    display: grid;
+    grid-template-columns: 2, 1fr;
+}
+
+.content{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    /* align-content: space-around; */
+    background-color: rgb(255, 214, 221);
+}
+
+.main_content{
+    height: 680px;
+    width: 100%;
+    vertical-align: top;
+    /* if add here, subtract double from ht/wd to keep same size */
+    padding: 10px;
+}
+
+h1 {
+    color: whitesmoke;
+    text-align: center;
+    padding: 25px;
+}
+
+.image {
+    height: 500px;
+    max-width: 100%; 
+    
+}
+
+.desc{
+    font-size: 15px;
+    padding-left: 20px;
+}
+
+.main{
+    text-align: center;
+}
+
+h2{
+    display: inline;
+}
+
