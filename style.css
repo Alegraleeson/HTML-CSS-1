@@ -4,12 +4,26 @@
     padding: 0;
 }
 
+body{
+    display: grid;
+    grid-template-areas: 
+            "head head head"
+            "img first first"
+            "img second second"
+            "bot bot bot";
+}
+
 .header{
+    grid-area: head;
     background-image: url("C:\Users\wingm\Devmountain\3week\1day\sample\images\background-6996525.jpg");
     background-color: pink;
     height: 100px;
     width: 100%;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
+#image1{
+    grid-area: img;
 }
 
 .footer{
@@ -21,17 +35,21 @@
 
 }
 
-.wrapper{
+/* .wrapper{
     display: grid;
     grid-template-columns: 2, 1fr;
-}
+} */
 
 .content{
-    display:flex;
+    display: grid;
+    grid-template-areas: 
+            "img right right"
+            "img right right";
+    /* grid-area: text; */
+    /* display:flex;
     justify-content: center;
-    align-items: center;
+    align-items: center; */
     margin: 10px;
-    /* align-content: space-around; */
     background-color: rgb(255, 214, 221);
 }
 
@@ -60,6 +78,16 @@ h1 {
     padding-left: 20px;
 }
 
+
+
+/* #one{
+    grid-area: first;
+}
+
+#two{
+    grid-area: second;
+} */
+
 .main{
     text-align: center;
 }
@@ -68,3 +96,10 @@ h2{
     display: inline;
 }
 
+.photo{
+    grid-area: bot;
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+    background-color: rgb(255, 214, 221);
+}
